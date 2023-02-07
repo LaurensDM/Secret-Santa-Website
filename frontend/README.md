@@ -44,3 +44,9 @@ REACT_APP_AUTH0_API_AUDIENCE= auth0 audience
 }
 
 ```
+
+## Extra info
+
+De website staat online op https://frontendweb-secretsanta.onrender.com/
+
+bekijk dossier.md voor meer informatie over de werking van de website

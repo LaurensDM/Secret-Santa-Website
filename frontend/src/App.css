@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+
+body {
+  font-family: "Public Sans",'Montserrat Alternates',"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: black;
+}
+
+/* "https://www.vecteezy.com/free-vector/christmas-background" Christmas Background Vectors by Vecteezy */
+.light {
+  background-image: url("./images/lightChristmasBG.jpg");
+  background-repeat: round;
+  background-color: aliceblue;
+}
+
+.pullNameContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: auto;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 1em;
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.returnHome {
+  cursor: pointer;
+  border: 0;
+  padding: 10px;
+  width: 100%;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  background-color: red;
+  box-shadow: inset 0 0 0 1px rgb(75, 1, 1), inset 0 0 0 2px rgb(75, 1, 1),
+    0 8px 0 0 rgb(75, 1, 1), 0 8px 0px 1px rgb(75, 1, 1),
+    0 8px 8px 1px rgb(75, 1, 1);
+}
+
+.returnHome:hover {
+  font-size: medium;
+}
+
+div > legend {
+  color: red;
+  -webkit-transform: skew(0, 3deg);
+  -moz-transform: skew(0, 3deg);
+  -o-transform: skew(0, 3deg);
+  transform: skew(0, 3deg);
+  text-shadow: 25px 5px 10px rgb(0, 0, 0,0.5);
+  font-size: 50px;
+  border: none;
+}
+
+.dark{
+  background-color: black !important;
+  background-image: url("./images/vecteezy_holiday-new-year-and-merry-christmas-background-vector_.jpg");
+  background-repeat: round;
+}
+
+footer{
+  padding: 25px;
+}
+
+.light footer{
+  background-color: rgb(220,220,220,0.8);
+}
+
+.dark footer{
+  background-color: rgba(255, 0, 0, 0.6);
+  color: black;
+}
+
+.dark .modalBg{
+  background-color: black;
+}
+
+.dark {
+  background-color: transparent;
+  color: greenyellow;
+}
+
+.dark .colorChange{
+  background-color: rgb(128,0,0);
+  color: greenyellow;
+}
+
+.light .colorChange{
+  background-color: white;
+}
+
+.dark .themeIcon {
+  color: greenyellow;
+  background-color: transparent;
+}
+
+.light .themeIcon{
+  background-color: transparent;
+}
+
+.dark nav.navbar{
+  background-color: rgb(0,128,0,0.7) !important;
+}
+
+.dark nav button {
+  background-color: red;
+}
+
+.light nav.navbar{
+  background-color: rgb(255,0,0,0.7) !important;
+}
+
+.navbar button{
+  background-color: lawngreen;
+  border-radius: 15px;
+  width: 150px;
+  font-weight: bold;
+}
+
+.navbar button:hover{
+  font-size: medium;
+  background-color: brown;
+  color: white;
+}
+
+
+.alert-font {
+  font-size: 16px !important;
+}
+
+.submit {
+  border-radius: 10px;
+  font-weight: bolder;
+  padding: 10px;
+  color: white;
+  border: none;
+  background-color: red;
+  margin-left: 35%;
+  margin-right: auto; 
+}
+
+.submit:hover{
+    background-color: white;
+    color: red;
+    font-size: 15px;
+}
+
+.dark a {
+  color: black !important;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  
+}
+
+a:hover{
+    font-size: large;
+    text-decoration: underline;
+}
+
+.account-info{
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 5px;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.account{
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 3;
+}
+
+.groupList{
+  grid-row: 1;
+  grid-column: 0;
+}
+
+.gifts{
+  display: grid;
+  grid-template-rows: 1;
+  grid-template-columns: 2;
+}
+
+.gift-column-1{
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.gift-column-1 img{
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.gift-column-2{
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.title{
+  margin-top: 8%; 
+  margin-bottom: 2%;
+}
+
+.groupBtn{
+  color: black;
+  padding: 10px;
+  max-width: 80%;
+  border: 1px solid #ddd;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  text-align: center;
+  min-width: 50px;
+}
+
+.dark label{
+  color: red !important;
+}
+
+.light  .groupBtn{
+  background-color: white;
+}
+
+.dark  .groupBtn{
+  background-color: rgb(128,0,0);
+  border-color: rgb(128,0,0);
+}
+
+.closeBtn{
+  display: inline-flexbox;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding: 15px;
+  background-color: lightslategrey;
+  opacity: 1;
+  max-width: 5%;
+}
+
+.navMargin2{
+  margin-left: 20%;
+}
+
+.navMargin1{
+  margin-left: 40%;
+}
+
+.icon{
+  padding: 4px;
+  max-width:30px;
+  max-height: 30px;
+  min-width: 15px;
+  min-height: 15px;
+  align-self: center;
+}
+
+.dark .languageBackground{
+  background-color: red !important;
+}
+
+.light .languageBackground{
+  background-color: chartreuse !important;
+}
+
+.light .features{
+  background-color: rgb(234, 240, 246,0.8);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.dark .features{
+  background-color: rgb(0, 0, 0,0.8);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.light .jumbotron{
+  background-color: rgba(255, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.dark  .jumbotron{
+  background-color: rgb(124,252,0,0.4);
+  color: black;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.dark p.font {
+  font-family: "Public Sans","sans-serif";
+  font-size: 10;
+  color: black !important;
+}
+
+.light p.font{
+  font-family: "Public Sans","sans-serif";
+  font-size: 10;
+  color: white !important;
+}
+
+.font-christmas {
+  font-family: MerryChristmas, sans-serif;
+  color: black !important;
+}
+
+.light .font-christmas{
+  font-family: MerryChristmas, sans-serif;
+  color: white !important;
+}
+
+p.largerFont{
+  font-size: 40px;
+}
+
+div.changeDirection{
+  display: flex;
+  flex-direction: row;
+}
+@font-face {
+  font-family: MerryChristmas;
+  src: url(../public/fonts/MerryChristmasFlake.ttf);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1250px) {
+  .navMargin1{
+    margin-left: 35%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .title{
+    margin-top: 10%;
+  }
+
+  .navMargin1{
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .navMargin1{
+    margin-left: 20%;
+  }
+
+  .navMargin2{
+    margin-left: 20%;
+  }
+}
+
+@media screen and  (max-width: 800px){
+  .title{
+    margin-top: 15%;
+  }
+
+  .navMargin1{
+    margin-left: 12%;
+  }
+
+  .navMargin2{
+    margin-left: 12%;
+  }
+}
+
+@media screen and  (max-width: 600px){
+  .title{
+    margin-top: 25%;
+  }
+
+  .navMargin1{
+    margin-left: 5%;
+  }
+
+  .navMargin2{
+    margin-left: 5%;
+  }
+  div.changeDirection {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  body{
+    background-image: none !important;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navMargin1{
+    margin-left: 0%;
+    margin-right: 1px;
+  }
+
+  .navMargin2{
+    margin-left: 1px;
+    margin-right: 0%;
+  }
+
+  .account{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }  
+}
+
+@media screen and (max-width: 450px) {
+  .navMargin1{
+    margin-left: 0%;
+    margin-right: 90%;
+  }
+
+  .navMargin2{
+    margin-left: 1px;
+    margin-right: 0%;
+  }
+
+  .title{
+    margin-top: 20%;
+  }
+
+
+  
+}
+
+
+
+@media screen and (min-width: 450px) {
+  .submit {
+      margin-left: 195px;
+  }
+}
+@media screen and (min-width: 915px) {
+  .submit {
+    margin-left: 46%;
+    margin-right: 45%;
+  }
+
+  footer {
+    justify-content: center;
+    align-items: flex-end;
+  }
+}
+
+
